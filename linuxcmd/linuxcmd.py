@@ -37,7 +37,7 @@ class Main(cmd.Cmd):
             # else:
             #     self.cp.error(text=f"*** Module `{module}` not has `Main` class!")
 
-            module = import_exploit("websploit.modules.{}".format(pythonize_path(line)))()
+            module = import_exploit("linuxcmd.modules.{}".format(pythonize_path(line)))()
             module.prompt = f"linuxcmd > {line} > "
             module.cmdloop()
 

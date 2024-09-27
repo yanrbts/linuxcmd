@@ -19,16 +19,16 @@ def read_requirements():
 
 
 setup(
-	name='websploit',
+	name='linuxcmd',
 	packages=[
-		'websploit',
-		'websploit.ezcolor',
-		'websploit.modules',
-		'websploit.core',
-		'websploit.core.base',
-		'websploit.core.utils'],
+		'linuxcmd',
+		'linuxcmd.ezcolor',
+		'linuxcmd.modules',
+		'linuxcmd.core',
+		'linuxcmd.core.base',
+		'linuxcmd.core.utils'],
 	package_data={
-          'websploit.core': [
+          'linuxcmd.core': [
               'utils/*',
           ],
       },
@@ -40,16 +40,16 @@ setup(
     # packages = find_packages(),
     entry_points ={ 
             'console_scripts': [ 
-                'websploit = websploit.websploit:start_wsf'
+                'linuxcmd = linuxcmd.linuxcmd:start_wsf'
             ] 
         },
 
 	license='MIT',
 	author='Fardin Allahverdinazhand',
 	author_email='0x0ptim0us@gmail.com',
-	url='https://github.com/websploit/websploit',
+	url='https://github.com/yanrbts/linuxcmd.git',
 	download_url=WEBSPLOIT_DOWNLOAD,
-	keywords=['python3', 'websploit', 'wsf', 'MITM', 'wifi', 'arp spoof'],
+	keywords=['python3', 'linuxcmd', 'wsf', 'MITM', 'wifi', 'arp spoof'],
 	classifiers=[
 		'Intended Audience :: Developers',
 		'License :: OSI Approved :: MIT License',

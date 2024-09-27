@@ -1,4 +1,3 @@
-from .tools import *
 from .tui import logo
 from .startup import check_dependencies
 from .output import CPrint

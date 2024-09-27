@@ -3,7 +3,7 @@ import os
 import importlib
 import string
 import random
-import websploit.modules as wsf_module
+import linuxcmd.modules as wsf_module
 
 MODULES_DIR = wsf_module.__path__[0]
 
@@ -17,7 +17,7 @@ def get_modules(modules_directory: str = MODULES_DIR) -> list:
 
     modules = []
     for root, dirs, files in os.walk(modules_directory):
-        _, package, root = root.rpartition("websploit/modules".replace("/", os.sep))
+        _, package, root = root.rpartition("linuxcmd/modules".replace("/", os.sep))
         root = root.replace(os.sep, ".")
         files = filter(lambda x: not x.startswith("__") and x.endswith(".py"), files)
         modules.extend(map(lambda x: ".".join((root, os.path.splitext(x)[0])), files))
@@ -49,7 +49,7 @@ def iter_modules(modules_directory: str = MODULES_DIR) -> list:
     """
 
     modules = index_modules(modules_directory)
-    modules = map(lambda x: "".join(["websploit.modules.", x]), modules)
+    modules = map(lambda x: "".join(["linuxcmd.modules.", x]), modules)
     for path in modules:
         yield import_exploit(path)
 

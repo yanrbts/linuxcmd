@@ -1,4 +1,4 @@
-from websploit.ezcolor import Style
+from linuxcmd.ezcolor import Style
 import platform
 
 

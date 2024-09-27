@@ -1,7 +1,7 @@
 import os
 import pkgutil
-from websploit.core.utils import CPrint
-from websploit.core.utils.module import get_modules, import_exploit, humanize_path
+from linuxcmd.core.utils import CPrint
+from linuxcmd.core.utils.module import get_modules, import_exploit, humanize_path
 cp = CPrint()
 
 # __all__ = list(module for _, module, _ in pkgutil.iter_modules([os.path.dirname(__file__)]))
@@ -15,7 +15,7 @@ def all_modules():
         try:
             # current_module = globals()[module].Main()
             module = module[1:]
-            current_module = import_exploit("websploit.modules.{}".format(module))()
+            current_module = import_exploit("linuxcmd.modules.{}".format(module))()
             cp.yellow(f"{humanize_path(module):<20}\t{current_module.__doc__}")
         except AttributeError:
             print(f"*** Module `{module}` not has `Main` class!")
