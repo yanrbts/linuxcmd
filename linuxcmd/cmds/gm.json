@@ -1,0 +1,7 @@
+{
+    "groupadd": "Create a new group",
+    "groupdel": "Delete a group",
+    "gpasswd": "Add a user to a group (alternative to usermod -aG)",
+    "newgrp": "Switch to a new group for the current session",
+    "groups": "Display the groups a user belongs to"
+}

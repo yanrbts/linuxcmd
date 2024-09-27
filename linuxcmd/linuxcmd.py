@@ -7,7 +7,7 @@ import cmd
 import os
 from .modules import *
 from .modules import module_list, all_modules
-from .core.utils import logo, CPrint, about, update
+from .core.utils import logo, CPrint, about, update, version
 from .core.utils.module import *
 
 
