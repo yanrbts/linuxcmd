@@ -1,0 +1,5 @@
+{
+    "chmod": "Change the permissions of a file or directory.",
+    "chown": "Change the owner and group of a file or directory.",
+    "chgrp": "Change the group of a file or directory."
+}

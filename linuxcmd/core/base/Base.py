@@ -24,10 +24,10 @@ class Module(cmd.Cmd):
         """View command help"""
 
         try:
-            print("\n")
             result = subprocess.run([line, "--help"], capture_output=True, text=True)
 
             if result.returncode == 0:
+                print("\n")
                 self.cp.green(result.stdout)
             else:
                 self.cp.error(text=result.stderr)
