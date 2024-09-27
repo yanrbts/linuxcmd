@@ -1,0 +1,9 @@
+{
+    "df": "Displays the disk usage of the file system.",
+    "du": "Displays disk usage of a directory or file.",
+    "fdisk": "Used for disk partition management.",
+    "mkfs": "Format the disk to the specified file system.",
+    "mount": "Mount the file system.",
+    "umount": "Unmount the file system."
+}
+  
